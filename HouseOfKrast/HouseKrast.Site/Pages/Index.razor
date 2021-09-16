@@ -1,5 +1,15 @@
 ﻿@page "/"
+@inherits IndexBase
 
-<h1>Hello, world!</h1>
+@if (KrastTimeline != null)
+{
+<div class="timeline">
+    <h1>Dom Krastów</h1>
+    <p>zaczynał skromnie jak każda rodzina</p>
 
-Welcome to your new app.
+    @for (int year = StartYear; year <= EndYear; year += 10)
+    {
+        <h3>@year</h3>
+    }
+</div>
+}
