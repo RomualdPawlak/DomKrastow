@@ -12,7 +12,80 @@
         "title": "Nestor Krast umiera pozostawiając po sobie prywatną firmę"
     },
     {
+        "year": 2300,
+        "title": "",
+        "bookTitle": "Honor",
+        "volume": 2,
+        "publishedIn": "",
+        "type": 1
+    },
+    {
+        "year": 2300,
+        "title": "Mona Krast zaklada kolonie na planecie Kys",
+        "volume": 3,
+        "publishedIn": "",
+        "type": 2
+    },
+    {
         "year": 2400,
-        "title": "Mona Krast zaklada kolonie na planecie Kys"
+        "title": "",
+        "bookTitle": "Czarne światło",
+        "publishedIn": "",
+        "type": 1
+    },
+    {
+        "year": 2500,
+        "title": "",
+        "bookTitle": "Trzy Zimne Siostry",
+        "volume": 2,
+        "publishedIn": "",
+        "type": 1
+    },
+    {
+        "year": 2500,
+        "title": "",
+        "bookTitle": "O maszynach i ludziach",
+        "volume": 2,
+        "publishedIn": "",
+        "type":1
+    },
+    {
+        "year": 2600,
+        "title": "",
+        "bookTitle": "Dom Krastów",
+        "volume": 2,
+        "publishedIn": "",
+        "type": 1
+    },
+    {
+        "year": 2600,
+        "title": "",
+        "bookTitle": "Mały Darhon",
+        "volume": 2,
+        "publishedIn": "",
+        "type": 1
+    },
+    {
+        "year": 2600,
+        "title": "",
+        "bookTitle": "Wolny jak Hamilton",
+        "volume": 4,
+        "publishedIn": "",
+        "type": 2
+    },
+    {
+        "year": 2800,
+        "title": "",
+        "bookTitle": "Podarować niebo",
+        "volume": 1,
+        "publishedIn": "Wydawnictwo IX 2020",
+        "type": 2
+    },
+    {
+        "year": 2800,
+        "title": "",
+        "bookTitle": "Gdyby to wiatr",
+        "publishedIn": "Nowa Fantastyka 9/2021",
+        "type": 1
     }
 ]
