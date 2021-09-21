@@ -1,0 +1,37 @@
+﻿@page "/"
+@inherits IndexBase
+
+@if (KrastTimeline != null)
+{
+<div class="timeline">
+    <h1>Dom Krastów</h1>
+    <p>zaczynał skromnie jak każda rodzina</p>
+
+    @for (int year = StartYear; year <= EndYear; year += YearJump)
+    {
+        var events = GetEvents(year);
+
+        @if (events.Any())
+        {
+            foreach (var item in events)
+            {
+                <h3>@item.Year</h3>
+                <p>@item.Title</p>
+            }
+        }
+        else if (year % 100 == 0)
+        {
+            <h3>@year</h3> 
+            SetReset(true);
+        }
+        else
+        {
+            if (Reset)
+            {
+                <h4>---</h4>
+            }
+            SetReset(false);
+        }
+    }
+</div>
+}
