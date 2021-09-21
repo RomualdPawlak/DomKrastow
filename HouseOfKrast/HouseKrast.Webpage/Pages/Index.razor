@@ -11,27 +11,34 @@
     {
         var events = GetEvents(year);
 
-        @if (events.Any())
-        {
-            foreach (var item in events)
-            {
-                <h3>@item.Year</h3>
-                <p>@item.Title</p>
-            }
-        }
-        else if (year % 100 == 0)
-        {
-            <h3>@year</h3> 
-            SetReset(true);
-        }
-        else
-        {
-            if (Reset)
-            {
-                <h4>---</h4>
-            }
-            SetReset(false);
-        }
+@if (events.Any())
+{
+    foreach (var item in events)
+    {
+<h3>@item.Key</h3>
+
+@foreach (var timelineEvent in @item)
+{
+    <p>@timelineEvent.Title</p>
+    <p>@timelineEvent.PublishedInFormatted</p>
+    <h4>---</h4>
+}
+    }
+}
+else if (year % 100 == 0)
+{
+    // TODO: Convert date to age in Roman calendar
+<h3>@year</h3>
+    SetReset(true);
+}
+else
+{
+    if (Reset)
+    {
+    <h4>---</h4>
+    }
+    SetReset(false);
+}
     }
 </div>
 }

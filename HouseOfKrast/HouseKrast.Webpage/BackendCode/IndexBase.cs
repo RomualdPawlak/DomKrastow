@@ -29,9 +29,11 @@ namespace HouseKrast.Webpage.BackendCode
             Console.WriteLine(KrastTimeline);
         }
 
-        protected IEnumerable<TimelineItem> GetEvents(int year)
+        protected IEnumerable<IGrouping<int, TimelineItem>> GetEvents(int year)
         {
-            return KrastTimeline.Where(x => x.Year >= year && x.Year < year + YearJump);
+            return KrastTimeline
+                .Where(x => x.Year >= year && x.Year < year + YearJump)
+                .GroupBy(x => x.Year);
         }
 
         protected void SetReset(bool newValue)
