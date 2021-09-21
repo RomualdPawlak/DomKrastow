@@ -1,0 +1,47 @@
+﻿html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.earth-header {
+    width: 100%;
+}
+
+.earth {
+    background-image: url('../images/space_earth.png');
+    width: 1063px;
+    height: 235px;
+    margin: auto;
+}
+
+.timeline {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+    .timeline h3 {
+        font-style: italic;
+    }
+
+/*.timeline-line {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 200px;
+    margin-left: -3px;
+    top: 0;
+    z-index: 1;
+}
+
+.timeline-content {
+    position: relative;
+    border-radius: 25px;
+    border: 2px solid lightgreen;
+    background-color: white;
+    z-index: 1000;
+    padding: 10px;
+    width: 500px;
+}*/
+
