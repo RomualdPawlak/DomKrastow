@@ -1,1 +1,2 @@
-# HouseOfKrast_PoC
+# Dom Krastów (House of Krast) Website
+This website is an introduction to the science-fiction saga of [Romuald Pawlak](https://pl.wikipedia.org/wiki/Romuald_Pawlak). It's content will be in Polish (as it is known mostly in Poland, when it will expand to other countries there's a chance of different languages), but the documentation and most of it's code will be in English.

@@ -1,0 +1,2 @@
+TODO: Menu z okładkami książek (z lewej)
+TODO: chowane menu (z prawej) z linkiem do bio autora, nadchodzącymi spotkaniami itp.
