@@ -1,5 +1,11 @@
-﻿<h3>Books</h3>
+﻿@inherits BooksBase
 
-@code {
+<h3>Books</h3>
 
+@if (Books != null)
+{
+    foreach (var book in Books.OrderByDescending(x => x.PublishDate))
+    {
+        <p>@book.Title</p>
+    }
 }
