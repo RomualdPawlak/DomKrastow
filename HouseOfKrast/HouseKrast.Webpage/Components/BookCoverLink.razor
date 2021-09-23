@@ -1,0 +1,12 @@
+﻿<center>
+    <a href="@Book.PublisherLink" target="_blank">
+        <img src="@GetCoverUrl(Book.CoverMini)" alt="@Book.Title" />
+    </a>
+</center>
+
+@code {
+    [Parameter]
+    public Book Book { get; set; }
+
+    protected string GetCoverUrl(string cover) => $"images/{cover}";
+}

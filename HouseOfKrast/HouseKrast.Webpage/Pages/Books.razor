@@ -1,11 +1,19 @@
 ﻿@inherits BooksBase
 
-<h3>Books</h3>
-
-@if (Books != null)
+@if (NotPublishedBooks != null && NotPublishedBooks.Any())
 {
-    foreach (var book in Books.OrderByDescending(x => x.PublishDate))
+    <center>Wkrótce!</center>
+    foreach (var book in NotPublishedBooks)
     {
-        <p>@book.Title</p>
+        <BookCoverLink Book="book" />
+    }
+}
+
+@if (PublishedBooks != null)
+{
+    <center>Już dostępne!</center>
+    @foreach (var book in PublishedBooks)
+    {
+        <BookCoverLink Book="book" />
     }
 }

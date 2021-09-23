@@ -2,13 +2,15 @@
     {
         "title": "Podarować niebo",
         "publishDate": "2020-12-01",
-        "coverMini": "cover_podarowac_niebo.jpg",
-        "cover": "cover_podarowac_niebo.jpg"
+        "coverMini": "cover_mini_podarowac_niebo.jpg",
+        "cover": "cover_podarowac_niebo.jpg",
+        "publisherLink": "https://wydawnictwoix.pl/produkt/romuald-pawlak-podarowac-niebo/"
     },
     {
         "title": "Pusty ogród",
         "publishDate": "2021-09-30",
-        "coverMini": "cover_pusty_ogrod.jpg",
-        "cover": "cover_pusty_ogrod.jpg"
+        "coverMini": "cover_mini_pusty_ogrod.jpg",
+        "cover": "cover_pusty_ogrod.jpg",
+        "publisherLink": "https://wydawnictwoix.pl/produkt/romuald-pawlak-pusty-ogrod/"
     }
 ]
