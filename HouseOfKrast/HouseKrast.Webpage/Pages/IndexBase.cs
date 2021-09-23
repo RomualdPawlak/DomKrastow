@@ -1,11 +1,10 @@
 ﻿using HouseKrast.Webpage.Models;
 using Microsoft.AspNetCore.Components;
-using System;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 
-namespace HouseKrast.Webpage.BackendCode
+namespace HouseKrast.Webpage.Pages
 {
     public class IndexBase : ComponentBase
     {
@@ -17,8 +16,6 @@ namespace HouseKrast.Webpage.BackendCode
         protected override async Task OnInitializedAsync()
         {
             KrastTimeline = await Http.GetFromJsonAsync<TimelineItem[]>("data/timeline.json");
-
-            Console.WriteLine(KrastTimeline);
         }
     }
 }
