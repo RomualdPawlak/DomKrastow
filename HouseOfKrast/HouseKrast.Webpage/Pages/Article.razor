@@ -1,0 +1,33 @@
+﻿@page "/article/{Code}"
+
+@if (IsCodeEmpty)
+{
+    <p>Oops</p>
+}
+else
+{
+    if (!string.IsNullOrWhiteSpace(ArticleContent))
+    {
+        @((MarkupString)ArticleContent)
+    }
+}
+
+@code {
+    [Parameter]
+    public string Code { get; set; }
+
+    [Inject]
+    public HttpClient Http { get; set; }
+
+    private string ArticleContent;
+
+    private bool IsCodeEmpty => string.IsNullOrWhiteSpace(Code);
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (IsCodeEmpty)
+            return;
+
+        ArticleContent = await Http.GetStringAsync($"Articles/{Code}.html");
+    }
+}

@@ -1,7 +1,8 @@
 ﻿html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: large;
     background-color: black;
-    color: white;
+    color: lightyellow;
 }
 
 .earth-header {
@@ -24,3 +25,11 @@
     .timeline h3 {
         font-style: italic;
     }
+
+.side-panel {
+    display: block;
+    border: 3px solid lightgreen;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}

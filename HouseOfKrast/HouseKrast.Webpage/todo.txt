@@ -1,5 +1,9 @@
+TODO: Reużywalny Modal
+
 TODO: Wyświetlanie artykułów (modal czy oddzielne okno?)
 
 TODO: Po kliknięciu w książkę pojawia się modal z opisem ksiązki i link do fragmentu
 
 TODO: chowane menu (z prawej) z linkiem do bio autora, nadchodzącymi spotkaniami itp.
+
+TODO: Converter dat z naszych na rzymskie dla wieków
