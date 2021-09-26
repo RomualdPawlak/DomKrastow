@@ -33,3 +33,23 @@
     padding: 10px;
     border-radius: 15px;
 }
+
+.link-list a {
+    display: block;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.book-cover-link a img {
+    opacity: 0.75;
+}
+
+.book-cover-link a:hover img {
+    opacity: 1;
+}
