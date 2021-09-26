@@ -28,6 +28,8 @@ else
         if (IsCodeEmpty)
             return;
 
+        // TODO: BUG 2nd article does not load
+
         ArticleContent = await Http.GetStringAsync($"Articles/{Code}.html");
     }
 }
