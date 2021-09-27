@@ -2,7 +2,9 @@
 
 @if (NotPublishedBooks != null && NotPublishedBooks.Any())
 {
-    <center>Wkrótce!</center>
+    <center>
+        <h5>Wkrótce!</h5>
+    </center>
     foreach (var book in NotPublishedBooks)
     {
         <BookCoverLink Book="book" />
@@ -11,7 +13,9 @@
 
 @if (PublishedBooks != null)
 {
-    <center>Już dostępne!</center>
+    <center>
+        <h5>Już dostępne!</h5>
+    </center>
     @foreach (var book in PublishedBooks)
     {
         <BookCoverLink Book="book" />

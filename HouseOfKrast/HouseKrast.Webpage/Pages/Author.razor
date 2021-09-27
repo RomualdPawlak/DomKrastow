@@ -1,8 +1,39 @@
-﻿<img src="images/romek.png" />
+﻿@inject IModalService modal
+
+<img src="images/romek.png" />
 
 <div class="link-list">
-    <a href="/Article/Geneza">Historia pomysłu</a>
-    <a href="/Article/Rodzina">Rodzina</a>
-    <a href="/Article/Spojnosc">Spójność</a>
-    <a href="/Article/Kolejnosc">Kolejność</a>
+    <a @onclick="@(() => ShowModal(1))">Historia pomysłu</a>
+    <a @onclick="@(() => ShowModal(2))">Rodzina</a>
+    <a @onclick="@(() => ShowModal(3))">Spójność</a>
+    <a @onclick="@(() => ShowModal(4))">Kolejność</a>
 </div>
+
+@code {
+    protected void ShowModal(int id)
+    {
+        if (id == 1)
+        {
+            modal.Show<Genesis>(Genesis.Title, Options);
+        }
+        if (id == 2)
+        {
+            modal.Show<Family>(Family.Title, Options);
+        }
+        if (id == 3)
+        {
+            modal.Show<Consistency>(Consistency.Title, Options);
+        }
+        if (id == 4)
+        {
+            modal.Show<Order>(Order.Title, Options);
+        }
+    }
+
+    private ModalOptions Options => new ModalOptions()
+    {
+        Position = ModalPosition.Center,
+        Animation = ModalAnimation.FadeInOut(0.5),
+        ContentScrollable = true
+    };
+}
