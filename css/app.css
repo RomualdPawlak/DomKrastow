@@ -32,6 +32,12 @@
     margin-top: 10px;
     padding: 10px;
     border-radius: 15px;
+    background-color: darkgreen;
+    color: lawngreen;
+}
+
+.side-panel h5 {
+    margin-bottom: 5px;
 }
 
 .link-list a {
@@ -46,10 +52,22 @@ a:hover {
     color: yellow;
 }
 
+.book-cover-link {
+    margin-bottom: 10px;
+}
+
 .book-cover-link a img {
     opacity: 0.6;
 }
 
 .book-cover-link a:hover img {
     opacity: 1;
+}
+
+.blazored-modal {
+    width: 65% !important;
+    height: 90% !important;
+    background-color: darkgreen;
+    color: lawngreen;
+    border-color: lightgreen;
 }
